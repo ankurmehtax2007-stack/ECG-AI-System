@@ -1,0 +1,13 @@
+flask
+flask-cors
+tensorflow
+numpy
+pandas
+sqlalchemy
+flask-sqlalchemy
+psycopg2-binary
+python-dotenv
+supabase
+flask-jwt-extended
+reportlab
+gunicorn

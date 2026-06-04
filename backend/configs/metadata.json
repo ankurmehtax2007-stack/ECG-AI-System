@@ -1,0 +1,7 @@
+{
+    "Model": "1D CNN",
+    "Input_Length": 187,
+    "Classes": 5,
+    "Dataset": "MIT-BIH Arrhythmia",
+    "Framework": "TensorFlow/Keras"
+}

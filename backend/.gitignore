@@ -1,0 +1,14 @@
+# Dataset
+backend/datasets/
+
+# Models
+*.keras
+*.h5
+
+# Python
+__pycache__/
+*.pyc
+
+# Environment
+venv/
+.env
