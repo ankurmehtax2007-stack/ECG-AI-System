@@ -11,3 +11,5 @@ supabase
 flask-jwt-extended
 reportlab
 gunicorn
+matplotlib
+scipy
