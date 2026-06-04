@@ -1,45 +1,104 @@
-import { Routes, Route } from "react-router-dom";
+import {
 
-import Navbar from "./components/Navbar";
+  BrowserRouter,
+
+  Routes,
+
+  Route
+
+} from "react-router-dom";
 
 import Dashboard from "./pages/Dashboard";
 import Patients from "./pages/Patients";
 import History from "./pages/History";
 import DoctorDashboard from "./pages/DoctorDashboard";
+import Login from "./pages/Login";
+
+import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
 
   return (
 
-    <>
-      <Navbar />
+    <BrowserRouter>
 
       <Routes>
 
         <Route
+
+          path="/login"
+
+          element={<Login />}
+
+        />
+
+        <Route
+
           path="/"
-          element={<Dashboard />}
+
+          element={
+
+            <ProtectedRoute>
+
+              <Dashboard />
+
+            </ProtectedRoute>
+
+          }
+
         />
 
         <Route
+
           path="/patients"
-          element={<Patients />}
+
+          element={
+
+            <ProtectedRoute>
+
+              <Patients />
+
+            </ProtectedRoute>
+
+          }
+
         />
 
         <Route
+
           path="/history"
-          element={<History />}
+
+          element={
+
+            <ProtectedRoute>
+
+              <History />
+
+            </ProtectedRoute>
+
+          }
+
         />
-        
+
         <Route
+
           path="/doctor"
-          element={<DoctorDashboard />}
+
+          element={
+
+            <ProtectedRoute>
+
+              <DoctorDashboard />
+
+            </ProtectedRoute>
+
+          }
+
         />
 
       </Routes>
 
-    </>
-
+    </BrowserRouter>
   );
 }
 

@@ -191,6 +191,17 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.logout-btn {
+  border: none;
+  cursor: pointer;
+  background: #ef4444;
+  color: white;
+}
+
+.logout-btn:hover {
+  opacity: 0.9;
+}
+
 /* Common Container */
 .container {
   max-width: 1280px;
